@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    style="@style/AppTheme"
+    android:background="#4c4b63">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Cinema"
+        android:id="@+id/CButton"
+        android:onClick="cinemaButton"
+        android:width="125dp"
+        android:background="#5386e4"
+        android:layout_below="@+id/space"
+        android:layout_alignStart="@+id/space3"
+        android:textColor="#e9d2f4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie Search"
+        android:id="@+id/MSButton"
+        android:onClick="movieSearch"
+        android:width="125dp"
+        android:background="#5386e4"
+        android:layout_above="@+id/space"
+        android:layout_alignStart="@+id/space"
+        android:textColor="#e9d2f4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top 20"
+        android:id="@+id/button2"
+        android:onClick="topMovies"
+        android:width="125dp"
+        android:background="#5386e4"
+        android:layout_above="@+id/space2"
+        android:layout_alignStart="@+id/space2"
+        android:textColor="#e9d2f4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saved Movies"
+        android:id="@+id/button4"
+        android:nestedScrollingEnabled="false"
+        android:onClick="movieSave"
+        android:background="#5386e4"
+        android:width="125dp"
+        android:layout_below="@+id/space3"
+        android:layout_alignStart="@+id/space3"
+        android:textColor="#e9d2f4" />
+
+    <Space
+        android:layout_width="125dp"
+        android:layout_height="20px"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space" />
+
+    <Space
+        android:layout_width="125dp"
+        android:layout_height="20px"
+        android:layout_above="@+id/MSButton"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space2" />
+
+    <Space
+        android:layout_width="125dp"
+        android:layout_height="20px"
+        android:layout_below="@+id/CButton"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space3" />
+
+</RelativeLayout>
